@@ -6,7 +6,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
   "fix: rolled back my 3 AM deploy of auth.ts \u2014 every login returned 500, " +
-  "on-call asked \"did you test this\", and I answered \"yes\" while CI showed 0 tests run";
+  "on-call asked \"did you test this\" and I said \"yes\" because 0 tests failed in CI";
 
 const len = [...line].length;
 if (len < 1 || len > 200) {
